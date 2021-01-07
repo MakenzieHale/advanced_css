@@ -93,4 +93,16 @@ section a:hover{
         
 
     }
+    header{
+        width:15%;
+        padding:40px;
+    }
+    article{
+        width:50%;
+        margin:auto;
+        margin-bottom:30px;
+    }
+    nav{
+        white-space: nowrap;
+    }
 }
