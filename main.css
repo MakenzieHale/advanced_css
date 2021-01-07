@@ -49,6 +49,7 @@ img{
     max-width:100%;
    
 }
+
 main a{
  text-decoration: none;
  color:black;
@@ -72,10 +73,24 @@ section a:active{
 section a:hover{
     text-decoration: underline;
 }
-@media only screen and(min-width:65em){
-    body{
+.post-date{
+    color:grey;
+}
+.post-content h2 a{
+    color:black;
+}
+.post-content h2 a:active{
+    color:#DEB887;
+}
+.post-content h2 a:hover{
+    color:#6495ED;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width:65em){
+    body div{
         display:flex;
-        flex-direction: column;
+        
 
     }
 }
