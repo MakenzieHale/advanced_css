@@ -14,7 +14,7 @@ body {
           flex: 2;
 }
 
-@media (min-width: 35em) {
+@media (max-width: 31em) {
   #contactform {
     width: 90%;
     max-width: 700px;
@@ -23,10 +23,22 @@ body {
   }
 }
 
-@media (min-width: 65em) {
+@media (max-width: 65em) {
   #contactform {
     width: 70%;
     max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+fieldset > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
 }
 /*# sourceMappingURL=style.css.map */
