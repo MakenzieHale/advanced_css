@@ -56,5 +56,6 @@ body{
 
 fieldset > div{
     @include flex-container(row, wrap);
+    padding:10px;
 }
 
