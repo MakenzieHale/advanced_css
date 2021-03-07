@@ -1318,6 +1318,14 @@ div.appMessage a.blue-btn {
   padding: 10px;
 }
 
+footer .footer-graphich::before {
+  background: url(https://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic_fixed.png) bottom no-repeat;
+  content: "";
+  display: block;
+  height: 146px;
+  padding: 0;
+}
+
 @media all and (max-width: 48em) {
   main {
     padding: 0 15px;
