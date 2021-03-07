@@ -1,0 +1,395 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+span.icon{
+  color:white;
+}
+body{
+
+  margin:0;
+ 
+}
+header div{
+  display:flex;
+  background-color:$byui-blue;
+  margin:0;
+  padding:0;
+  flex:1 1 auto;
+}
+header a{
+  color:white;
+  font-size: 2em;
+
+}
+span .icon-search, .icon-audience,.icon-menu{
+  padding:20px;
+  margin-left:20px;
+  
+}
+.icon-byui-logo{
+  background:$body-font;
+  padding:10px;
+  margin:10px;
+
+}
+
+form{
+  padding:10px;
+}
+div.byui-banner{
+  background-color: $light-gray;
+  padding:0;
+  margin:0;
+
+}
+.byui-banner a{
+  text-align: center;
+  font-size:2em;
+  color:$dark-gray;
+  text-decoration: none;
+  padding:15px;
+ 
+
+  
+}
+.whole-page{
+  padding:40px;
+  margin:20px;
+  font-family: 'BYUI Open Sans';
+
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'BYUI Open Sans';
+}
+.home-layout{
+  display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.main-column{
+  -webkit-box-flex:0;
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+
+}
+img{
+  max-width:100%;
+
+}
+
+.news-section,.bottom-section{
+  display: flex;
+  margin-right:-15px;
+  margin-left:-15px;
+  padding:0;
+  max-width: 100%;
+
+}
+.main-home-pic,.news-section{
+  margin-bottom:20px;
+}
+
+.news-img, figcaption{
+  border:2px solid $dark-gray;
+  padding:0;
+}
+figcaption{
+  text-align: center;
+  color:$link-blue;
+  margin:0;
+  border-top:none;
+  padding:5px;
+}
+.news-right,.news-mid,.news-left{
+margin-right:-15px;
+margin-left:-15px;
+  padding:0;
+}
+.side-section{
+  -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.3333333333%;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding:0 15px;
+}
+.audience-button{
+  display: block;
+  padding:10px 18px;
+  text-align: left;
+  font-size: 1em;
+  width:100%;
+  border:1px solid $dark-gray;
+}
+span.icon-triangle-down{
+  float:right;
+}
+
+h3.resource-title{
+  border:2px solid $dark-gray;
+  padding:10px;
+  background-color:$dark-gray;
+  color:white;
+  font-size:1.5em;
+  margin-bottom:0;
+}
+.resourceLinks .highlights-link{
+  display:block;
+ 
+}
+.resourceLinks a{
+  text-decoration: none;
+}
+.highlights-link{
+  background-color: $light-gray;
+  padding:8px 20px;
+  border: 1px solid $dark-gray;
+  border-top:none;
+  color:$link-blue;
+  span.icon-angle-right{
+    float:right;
+  }
+}
+.datesTitle{
+  background-color: $byui-blue;
+  color:white;
+  padding:10px;
+  font-size:1.5em;
+  border: 1px solid $dark-gray;
+
+
+}
+.datesList{
+  border-bottom:1px solid $dark-gray
+}
+
+.calInfo, .calDate{
+  color:$body-font;
+  display:inline-block;
+  padding:8px 20px;
+  margin-bottom:15px;
+  font-size: 13px;
+  
+}
+.news{
+  flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+}
+
+article.article{
+  padding:25px 0;
+  border-top:1px solid $dark-gray;
+  margin-top:15px;
+  width: 100%;
+  margin-bottom:-36px;
+
+}
+.articleRow{
+  display: flex;
+  width: 100%;
+
+}
+.articleImg{
+  flex:0 0 25%;
+  max-width:25%;
+}
+.articleInfoContainer{
+  flex:0 0 75%;
+  max-width:75%;
+  padding:0 15px;
+}
+.articleInfoContainer.article_date{
+  font-weight: 700;
+  font-size: 1em;
+}
+.newsroom-btn{
+  float:right;
+  padding:30px;
+}
+a.blue-btn{
+  text-decoration: none;
+  background-color: $byui-blue;
+  padding:6px 20px;
+  border-radius:4px;
+  color:white;
+  font-size:1em;
+  margin-bottom:36px;
+}
+.app-left-section{
+  
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+  padding: 0 15px;
+ 
+} 
+
+
+.appContainer{
+  flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.messageImg,.appMessage{
+
+  border:1px solid $dark-gray;
+  border-radius:6px;
+}
+.appMessage{
+  padding-bottom:15px;
+}
+.messageTitle{
+  font-size:17px;
+  color:$byui-blue;
+  padding:5px 20px;
+
+}
+.message-description{
+  padding:5px 20px;
+  font-size:15px;
+  line-height:24px;
+}
+div.appMessage a.blue-btn{
+  margin:15px;
+  padding:10px;
+}
+
+@media all and(max-width:$sm-break){
+  main{
+    padding:0 15px;
+
+  }
+  .whole-page,.home-layout{
+    padding:0;
+    margin:0;
+    margin-top:10px;
+  }
+  .icon-byui-logo{
+    margin:0;
+  }
+  form,.hidden{
+    display:none;
+  }
+  .byui-banner a{
+    font-size:1em;
+    text-align: center;
+  }
+  span .icon-search, .icon-audience,.icon-menu{
+    padding:0;
+  }
+  
+
+  
+  .main-column{
+  width: 100%;
+  max-width: 100%;
+  flex:0 0 100%;
+
+  }
+  
+  .news-section{
+    flex-wrap:wrap;
+    flex:0 0 100%;
+    width:100%;
+    margin:0 auto;
+  
+
+  }
+
+  .side-section{
+    flex-wrap:wrap;
+    margin:0 auto;
+    flex:0 0 100%;
+    max-width:100%;
+   
+
+  }
+  .bottom-section{
+    padding-right:15px;
+    padding-left:15px;
+  }
+ .news{
+   flex-direction: row;
+   flex:0 0 100%;
+   max-width:100%;
+   margin-right:15px;
+   margin-left:15px;
+ 
+
+ }
+
+ 
+  .calDate,.calInfo{
+    font-size: 10px;
+  }
+  div.article_date{
+    font-size:13px;
+    font-weight: bold !important;
+    color:$body-font;
+  }
+  h4.articleTitle{
+    font-size:17px;
+    color:$link-blue;
+    margin-top:18px;
+    margin-bottom:12px;
+    
+    a{
+      text-decoration: none;
+    }
+  }
+  p.article-abstract{
+    font-size:15px;
+    margin-bottom:12px;
+    line-height:24px;
+
+  }
+ .bottom-section{
+   display: block;
+ }
+ .app-left-section{
+  flex:0 0 100%;
+   flex-direction: row;
+  max-width:100%;
+}
+
+.appMessage{
+  width:100%;
+  margin-top:80px;
+  padding:15px;
+}
+
+ 
+ 
+  
+ 
+}
